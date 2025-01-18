@@ -27,15 +27,18 @@
       font-size: 2.5em;
       font-weight: bold;
       margin-bottom: 10px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* 그림자 추가 */
     }
     .subtitle {
       font-size: 1.2em;
       margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* 그림자 추가 */
     }
     .tagline {
       font-size: 1.1em;
       font-style: italic;
-      margin-bottom: 40px; /* 부제목과 버튼 사이 여백 */
+      margin-bottom: 50px; /* 추가 여백 */
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* 그림자 추가 */
     }
     .button {
       width: 80%;
@@ -48,20 +51,20 @@
       background: rgba(255, 255, 255, 0.2); /* 투명한 흰색 배경 */
       border-radius: 30px;
       text-align: center;
-      backdrop-filter: blur(10px); /* 버튼 배경만 블러 처리 */
+      backdrop-filter: blur(40px); /* 버튼 배경 블러 강도 증가 */
       transition: background 0.3s, backdrop-filter 0.3s;
       border: 1px solid rgba(255, 255, 255, 0.4); /* 약간의 경계선 */
     }
     .button:hover {
       background: rgba(255, 255, 255, 0.3); /* 호버 시 밝아짐 */
-      backdrop-filter: blur(12px); /* 호버 시 블러 강화 */
+      backdrop-filter: blur(45px); /* 호버 시 블러 강화 */
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="title">Comme Moi Atelier</div>
-    <div class="subtitle">꼼모아 아틀리에에</div>
+    <div class="subtitle">꼼모아 아틀리에</div>
     <div class="tagline">Glow More, Comme Moi</div>
     <a href="#" class="button">예약하기</a>
     <a href="#" class="button">카카오톡 문의</a>
