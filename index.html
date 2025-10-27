@@ -5,18 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Doé</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <style>
+    :root{
+      --ink:#6F332D;
+    }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      background: url('./bg.png') center / cover no-repeat fixed;
+      font-family:'Pretendard',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:450px;
+      padding:40px 24px;
+      min-height:100svh;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      margin:0 auto;
+    }
+    .logo-area{ text-align:center; margin-top:6vh; }
+    .logo{ width:65%; max-width:280px; height:auto; }
+
+    .buttons{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      margin:auto 0;
+    }
+    .btn{
+      text-align:center;
+      padding:14px 0;
+      font-size:15px;
+      color:var(--ink);
+      text-decoration:none;
+      background: rgba(255,255,255,0.18);
+      border:1px solid var(--ink);      /* inner 1px */
+      outline:0.5px solid var(--ink);   /* outer 0.5px */
+      outline-offset:3px;               /* gap between lines */
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active{ opacity:.6; }
+
+    .footer{
+      text-align:center;
+      font-size:11px; /* about 1/3 of 15px */
+      margin-bottom:16px;
+      opacity:.75;
+    }
+    @media (min-width:480px){
+      .wrap{ max-width:520px; }
+    }
+  </style>
 </head>
 <body>
   <div class="wrap">
     <div class="logo-area">
-      <img src="/doe/assets/images/doe_logo.png" alt="Doé" class="logo">
+      <img src="./logo.png" alt="Doé" class="logo">
     </div>
 
     <div class="buttons">
-      <a href="http://pf.kakao.com/_ynYAn" class="btn">카카오톡 채널</a>
-      <a href="https://blog.naver.com/won_sunshine" class="btn">네이버 블로그</a>
-      <a href="https://www.instagram.com/bride_aeoni" class="btn">Wedding Bride Aeoni</a>
+      <a href="http://pf.kakao.com/_ynYAn" class="btn" target="_blank" rel="noopener">카카오톡 채널</a>
+      <a href="https://blog.naver.com/won_sunshine" class="btn" target="_blank" rel="noopener">네이버 블로그</a>
+      <a href="https://www.instagram.com/bride_aeoni" class="btn" target="_blank" rel="noopener">Wedding Bride Aeoni</a>
     </div>
 
     <div class="footer">© Doé. All rights reserved.</div>
