@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body {
   margin: 0;
   /* 절대경로 + cover, attachment:fixed 제거 */
-  background: url('/doe/assets/images/doe_main.jpg') center / cover no-repeat;
+  background: url('/doe/assets/images/doe_main.png') center / cover no-repeat;
   font-family: 'Pretendard', sans-serif;
   color: #6F332D;
 }
